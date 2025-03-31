@@ -46,7 +46,7 @@ CFLAGS_COMMON = \
 	-Wno-non-literal-null-conversion \
 	$(CFLAGS_EXTRA)
 CFLAGS_DEBUG = -g $(CFLAGS_COMMON)
-CFLAGS_DIST =  -Oz -flto $(CFLAGS_COMMON)
+CFLAGS_DIST =  -O1 -flto $(CFLAGS_COMMON)
 
 EMFLAGS_COMMON = \
 	-s ALLOW_MEMORY_GROWTH=1 \
@@ -63,7 +63,7 @@ EMFLAGS_DEBUG = \
 	$(EMFLAGS_COMMON)
 
 EMFLAGS_DIST = \
-	-Oz \
+	-O1 \
 	-flto \
 	$(EMFLAGS_COMMON)
 
